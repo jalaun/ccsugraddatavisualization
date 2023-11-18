@@ -28,10 +28,10 @@ df_hispanic = pd.DataFrame(hispanic_students)
 plt.figure(figsize=(12, 6))
 #.plot draws a line plot. marker = o means each data point will be marked with a circle
 plt.plot(df_black["Year"], df_black["Graduation Rate (%)"], marker='o', color='black', label='Black Students')
-plt.plot(df_white["Year"], df_white["Graduation Rate (%)"], marker='o', color='yellow', label='White Students')
+plt.plot(df_white["Year"], df_white["Graduation Rate (%)"], marker='o', color='green', label='White Students')
 plt.plot(df_hispanic["Year"], df_hispanic["Graduation Rate (%)"], marker='o', color='red', label='Hispanic Students')
 
-plt.title("4-Year Graduation Rates by Race (2012-2022)")
+plt.title("4-Year Graduation Rates by Race (2012-2019)") 
 plt.xlabel("Year")
 plt.ylabel("Graduation Rate (%)")
 plt.legend()
